@@ -38,7 +38,7 @@ namespace WindowsFormsApp4
             String source = @"Data Source=DESKTOP-J9KEMU1;Initial Catalog=Test;Integrated Security=True";
             SqlConnection con = new SqlConnection(source);
             con.Open();
-            MessageBox.Show("DB Connected");
+            //MessageBox.Show("DB Connected");
             String sqlSelecQuery = "SELECT * FROM lojass WHERE loja = " + int.Parse(textBox1.Text);
             SqlCommand cmd = new SqlCommand(sqlSelecQuery, con);
             SqlDataReader dr = cmd.ExecuteReader();
