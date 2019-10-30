@@ -49,13 +49,26 @@ namespace WindowsFormsApp4
             }
         }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           if (comboBox1.SelectedIndex == 0)
+            {
+                comboBox2.Items.Clear();
+                comboBox2.Items.Add("Desligar Cabos");
+            }
+           else
+            {
+                comboBox2.Items.Clear();
+            }
+        }
+
         //private void Enter(object sender, KeyEventArgs e)
         //{
         //    if (e.KeyChar == (char)13)
         //    {
         //        MessageBox.Show("cesar");
         //    }
-            
+
         //}
     }
 }
